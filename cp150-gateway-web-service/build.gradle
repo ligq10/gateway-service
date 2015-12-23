@@ -1,0 +1,23 @@
+version = '1.0'
+jar {
+    baseName = 'cp150-gateway-web-service-'+"$profile"
+    version = '0.1.0'
+}
+
+dependencies {
+    compile(
+            "org.springframework.boot:spring-boot-starter-web",
+            "org.springframework.boot:spring-boot-starter-data-mongodb",
+            "org.springframework.boot:spring-boot-starter-data-rest",
+            "org.springframework.boot:spring-boot-starter-actuator",
+            "org.springframework.boot:spring-boot-starter-data-jpa",
+            "mysql:mysql-connector-java:5.1.29",
+            "com.typesafe.akka:akka-cluster_2.10:2.3.2",
+            "com.typesafe.akka:akka-remote_2.10:2.3.2",
+            "org.msgpack:msgpack:0.6.11"
+    )
+    
+     compile('org.apache.kafka:kafka_2.10:0.8.2.1') {
+        exclude group:'org.slf4j'
+    }
+}

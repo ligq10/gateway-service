@@ -1,0 +1,17 @@
+version = '1.0'
+jar {
+    baseName = 'voice-remind-service-'+"$profile"
+    version = '0.1.0'
+}
+
+dependencies {
+    compile(
+            "org.springframework.boot:spring-boot-starter-web",
+            "org.apache.httpcomponents:httpclient",
+            "org.springframework.boot:spring-boot-starter-data-jpa",
+            "org.springframework.boot:spring-boot-starter-actuator",
+            'com.jayway.jsonpath:json-path:2.0.0',
+            "mysql:mysql-connector-java:5.1.29",
+            "org.apache.poi:poi-excelant:3.9"
+    )
+}

@@ -1,0 +1,12 @@
+rootProject.name = 'loving-cp150-service'
+
+include 'cp150-terminal-rest'
+
+include 'cp150-gateway'
+
+include 'cp150-gateway-web-service'
+
+include 'cp150-message-service'
+
+include 'voice-remind-service'
+
